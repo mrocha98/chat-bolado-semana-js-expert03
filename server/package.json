@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "license": "AGPL-3.0-or-later",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=15"
+  },
+  "scripts": {
+    "format": "prettier-standard --format",
+    "lint": "prettier-standard --lint",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js --exec \"npm run format && node\""
+  },
+  "dependencies": {
+    "http-status": "^1.5.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "prettier-standard": "^16.4.1"
+  }
+}
